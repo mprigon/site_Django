@@ -1,0 +1,20 @@
+{% extends 'flatpages/default.html' %}
+
+{% block style %}
+<style>
+    h2 {font-size: 50px;}
+
+    p.serif {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    }
+
+</style>
+{% endblock style %}
+
+{% block content %}
+<!-- заголовок h2 с новым размером -->
+<h2>{{ flatpage.title }}</h2>
+<!-- контент новым шрифтом и размером, italic -->
+<p class="serif"><i>{{ flatpage.content }}</i></p>
+{% endblock content %}
